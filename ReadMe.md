@@ -1,4 +1,6 @@
-# install all dependency module at package.json
-npm install -d
+# How To use gulp, browserify, angular to build app
 
-# Javascript/Css cache
+Use gulp, browserify to try to build modern web application's sample.
+
+# List of things need to resolve
++ how to cache JS/CSS
