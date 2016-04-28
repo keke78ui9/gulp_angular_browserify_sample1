@@ -1,3 +1,8 @@
 # Ignore node
 /node_modules
 
+
+# Ignore production build foler
+/public
+
+

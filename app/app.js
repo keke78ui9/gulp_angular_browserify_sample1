@@ -3,26 +3,26 @@ require('angular');
 require('angular-route');
 var app = angular.module('gulp.test1', ['ngRoute']);
 
-require('./controllers/index');
-require('./controllers/main');
-require('./controllers/main1');
+require('./controllers/controller1');
+require('./controllers/controller2');
+require('./controllers/controller3');
 
 app.config(function ($routeProvider) {
     $routeProvider
        .when('/', {
-        templateUrl: 'views/index.html',
-        controller: 'IndexCtrl',
-        controllerAs: 'index'
+        templateUrl: 'views/controller1.html',
+        controller: 'controller1',
+        controllerAs: 'controller1'
       })
-      .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/1', {
+        templateUrl: 'views/controller2.html',
+        controller: 'controller2',
+        controllerAs: 'controller2'
       })
-       .when('/main1', {
-        templateUrl: 'views/main1.html',
-        controller: 'Main1Ctrl',
-        controllerAs: 'main1'
+       .when('/2', {
+        templateUrl: 'views/controller3.html',
+        controller: 'controller3',
+        controllerAs: 'controller3'
       })
       .otherwise({
         redirectTo: '/'
